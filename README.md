@@ -36,14 +36,19 @@ The expected outcome of this project is a functional prototype that can track an
     ```bash
     git clone <repository_url>
     ```
-2. Install the required libraries:
+2. Create conda repository with python 3.9.19:
     ```bash
-    pip install -r requirements.txt
+    conda create -n eyetrack python=3.9.19
     ```
-3. Run the program:
+3. Install the required libraries:
+    ```bash
+    pip install opencv-python mediapipe pandas pyautogui numpy scikit-learn
+    ```
+4. Run the program:
     ```bash
     python main.py
     ```
+
 
 ## Usage
 - Prepare the video input for eye movement tracking.
